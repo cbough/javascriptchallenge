@@ -10,3 +10,21 @@ for (var i=1; i < 101; i++){
     else if (i % 5 == 0) console.log("Buzz");
     else console.log(i);
 }
+
+function translatePig(str) {
+
+     var vowels = ["a","e","i","o","u"];
+     var smack = str.split("");
+     var index;
+
+     if(index !== 0){
+       var sliced = str.slice(0, index);
+       str = str.slice(index) + sliced + "ay";
+     }else {
+       str = str + "way";
+     }
+
+     return str;
+   }
+
+   translatePigLatin("consonant");
